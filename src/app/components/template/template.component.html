@@ -1,0 +1,23 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="drawer.toggle()">
+    <mat-icon>
+      menu
+    </mat-icon>
+  </button>
+  <span>
+    Cms UI
+  </span>
+  <span class="nav-spacer"></span>
+</mat-toolbar>
+
+<mat-drawer-container class="container" hasBackdrop="true">
+  <mat-drawer #drawer mode="over">
+    sadgasdgasdgsad
+  </mat-drawer>
+  <mat-drawer-content>
+    <div class="p-10">
+      <span>Example</span>
+      <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>
